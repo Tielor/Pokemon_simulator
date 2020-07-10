@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokedex</title>
+        <link type='text/css' rel='stylesheet' href="pokedex2.css">
+    </head>
+    <body>
+        <div id='container'>
+            <div id='led_light'></div>
+            <div id='led'>
+                <div class="light" id="lightOne"></div>
+                <div class="light" id="lightTwo"></div>
+                <div class='light' id="lightThree"></div>
+            </div>
+            <div id="screen">
+                <h2>Pokemon Battle simulation</h2>
+                <h3 id="trainer">choose your pkokemon, </h3>
+                <div id="pokemon_sprites">
+                    <img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/pikachu.png" alt="Pikachu" class='sprite zero' id="25" >
+                    <img src="https://img.pokemondb.net/sprites/black-white/normal/charmeleon.png" alt="Charmeleon" class="sprite 0ne" id="5">
+                    <img src="https://img.pokemondb.net/sprites/diamond-pearl/normal/piplup.png" alt="Piplup" class="sprite two" id="393" >
+                </div> 
+                <h3 id="pokeName"></h3>
+                <div id="description">
+                    <h3>Move List</h3>
+                    <ul id="move_List">
+                        <li class="listItem" id="0"></li>
+                        <li class="listItem" id="1"></li>
+                        <li class="listItem" id="2"></li>
+                        <li class="listItem" id="3"></li>
+                    </ul>
+                </div>
+                <div id="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="accept_button">ACCEPT?</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="pokedex.js"></script>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+  background-image:
+  url(poke.jpg);
+}
+#container {
+    margin:auto;
+    margin-top: 10px;
+    width: 500px;
+    height: 600px;
+    background-color: #353839;
+    border-radius: 20px;
+    box-shadow: 1px 10px 10px;
+    position: relative;
+}
+#led_light {
+    background-color: aqua;
+    display: inline-block;
+    border: solid white 5px;
+    margin-left: 7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#led{
+    display: inline-flex;
+    flex-direction: row;
+    position: absolute;
+    padding-left: 10px;
+}
+.light{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    margin: 3px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+#lightOne{
+    background-color: darkred;
+}
+#lightTwo{
+    background-color: yellow;
+}
+#lightThree{
+    background-color: lightgreen;
+}
+#screen{
+    width: 80%;;
+    height: 0px;
+    transition: all 1000ms;
+    background-color: #1d6b3e;
+    margin: auto;
+    text-align: center;
+ letter-spacing: .05em;
+ text-shadow: 1px 1px 1px #d5d5d5, 1px 1px 0px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    }
+#screen h3{
+  margin-top: 10px;
+}
+#screen h2{
+
+}
+
+#input{
+margin-top: 10px;
+}
+#form{
+    background-color: antiquewhite;
+    text-align: left;
+    width: ;
+
+    display: block;
+    margin: auto;
+}
+#button{
+  margin: auto;
+  display: block;
+  border-radius: 50%; padding: 10px;
+  margin-top: 20px;
+}
+pokemon_sprites{
+    display: flex;
+}
+.sprite{
+    margin: 20px
+}
+.sprite:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+#pokeName{
+    text-align: left;
+    margin: 10px;
+}
+#description{
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+#move_List{
+    list-style: none;
+}
+#accept_button{
+    margin-top: 70px;
+    display: none;
+    background-color: darkred;
+    padding: 20px;
+    border-radius: 30%;
+    transition: all 1000ms
+}
+#accept_button:hover{
+    cursor: pointer;
+}
+.zero{
+    float: right;
+    position: absolute;
+    bottom: 90px;
+    right: 25px;
+}
+
+#table{
+    border: solid black 2px;
+    position: absolute;
+    bottom: 130px;
+    width: 200px;
+    left: 90px;
+    padding: 10px;
+    display: none;
+}
+table tr th{
+    border: solid black 1px;
+    transition: all 1000ms
+}
+table tr th:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#score{
+    display: none;
+
+}
+#mew{
+    position: absolute;
+    bottom: 240px;
+    left: 100px;
+    display: none;
+}
+#health{
+    display: none;
+    position: absolute;
+    bottom: 180px;
+    right: 60px;
+}
+#enemy{
+     display: none;
+}
+#super{
+    bottom: 40px;
+    width: 80%;
+    background-color: grey;
+    padding: 20px;
+    position: absolute;
+    display: none;
+}
+#super:hover{
+    cursor: pointer;
+}
+#Won{
+  height: 50%;
+  width: 80%;
+  background-color: lightcoral;
+    position: absolute;
+    display: none;
+}
+#form{
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+
+}

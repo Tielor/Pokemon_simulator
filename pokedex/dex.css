@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-image:
+    url(poke.jpg);
+}
+#container {
+    margin:auto;
+    margin-top: 10px;
+    width: 500px;
+    height: 600px;
+    background-color: #EF5350;
+    border-radius: 20px;
+    box-shadow: 1px 10px 10px;
+    position: relative;
+}
+#led_light {
+    background-color: aqua;
+    display: inline-block;
+    border: solid white 5px;
+    margin-left: 7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#led{
+    display: inline-flex;
+    flex-direction: row;
+    position: absolute;
+    padding-left: 10px;
+}
+.light{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    margin: 3px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+#lightOne{
+    background-color: darkred;
+}
+#lightTwo{
+    background-color: yellow;
+}
+#lightThree{
+    background-color: lightgreen;
+}
+#screen{
+    width: 80%;;
+    height: 200px;
+    background-color: limegreen;
+    margin: auto;
+    text-align: center;
+ letter-spacing: .05em;
+ text-shadow: 1px 1px 1px #d5d5d5, 1px 1px 0px rgba(0, 0, 0, 0.2);
+    }
+ #screen h3{
+   margin-top: 20px;
+ }
+#input{
+margin-top: 10px;
+}
+#form{
+    background-color: antiquewhite;
+    text-align: left;
+    display: block;
+    margin: auto;
+}
+#button{
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+}

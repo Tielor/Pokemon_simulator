@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title Pokedex
+    link(type='text/css', rel='stylesheet', href='/../pokedex/pokedex.css')
+  body
+    #container
+      #led_light
+      #led
+        #lightOne.light
+        #lightTwo.light
+        #lightThree.light
+      #screen
+        #title
+          h2 Pokemon Battle simulation
+          h3#trainer= 'choose your pokemon, '+name
+        #Won
+          h1 Congrats, You've Won!
+          form#form(action='/battle', method='post')
+            button(type='submit',  name='Click to retry') Click to retry
+        #pokemon_sprites
+          img#25.sprite.one(src='https://img.pokemondb.net/sprites/ruby-sapphire/normal/pikachu.png', alt='Pikachu')
+          img#5.sprite.two(src='https://img.pokemondb.net/sprites/black-white/normal/charmeleon.png', alt='Charmeleon')
+          img#393.sprite.three(src='https://img.pokemondb.net/sprites/diamond-pearl/normal/piplup.png', alt='Piplup')
+        h3#pokeName
+        #description
+          h3#moves
+          ul#move_List
+            li#0.listItem
+            li#1.listItem
+            li#2.listItem
+            li#3.listItem
+        table#table
+          tbody
+            tr
+              th#move1 Kick
+              th#move2 punch
+            tr
+              th#move3 throw
+              th#move4 swang
+        h3#score score:0
+        h3#health Health:100
+        h3#enemy Enemy:100
+        img#mew.sprite(src='https://img.pokemondb.net/sprites/ruby-sapphire/shiny/mew.png', alt='Mew')
+        #accept_button ACCEPT?
+        #super SUPER
+    script(type='text/javascript', src='../pokedex/pokedex.js')

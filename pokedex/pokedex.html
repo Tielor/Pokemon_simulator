@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokedex</title>
+        <link type='text/css' rel='stylesheet' href="pokedex.css">
+    </head>
+    <body>
+        <div id='container'>
+            <div id='led_light'></div>
+            <div id='led'>
+                <div class="light" id="lightOne"></div>
+                <div class="light" id="lightTwo"></div>
+                <div class='light' id="lightThree"></div>
+            </div>
+            <div id="screen">
+                <div id="title">
+                <h2>Pokemon Battle simulation</h2>
+                <h3 id="trainer">choose your pkokemon, </h3>
+                </div>
+                <div id="pokemon_sprites">
+                    <img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/pikachu.png" alt="Pikachu" class='sprite one' id="25">
+                    <img src="https://img.pokemondb.net/sprites/black-white/normal/charmeleon.png" alt="Charmeleon" class="sprite two" id="5">
+                    <img src="https://img.pokemondb.net/sprites/diamond-pearl/normal/piplup.png" alt="Piplup" class="sprite three" id="393">
+                </div> 
+                <h3 id="pokeName"></h3>
+                <div id="description">
+                    <h3 id="moves"></h3>
+                    <ul id="move_List">
+                        <li class="listItem" id="0"></li>
+                        <li class="listItem" id="1"></li>
+                        <li class="listItem" id="2"></li>
+                        <li class="listItem" id="3"></li>
+                    </ul>
+                </div>
+                <table id="table">
+                        <tr>
+                            <th id="move1">Kick</th>
+                            <th id="move2">punch</th>
+                        </tr>
+                        <tr>
+                            <th id="move3">throw</th>
+                            <th id="move4">swang</th>
+                        </tr>
+                    </table>
+                    <h3 id="score">score:0</h3>
+                    <h3 id="health">Health:100</h3>
+                    <h3 id="enemy">Enemy:100</h3>
+                <img src="https://img.pokemondb.net/sprites/ruby-sapphire/shiny/mew.png" alt="Mew" class="sprite" id="mew">
+                <div id="accept_button">ACCEPT?</div>
+                <div id="super">SUPER</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="pokedex.js"></script>
+    </body>
+</html>

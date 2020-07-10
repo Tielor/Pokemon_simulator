@@ -1,0 +1,20 @@
+doctype html
+head
+  title Pokedex
+  link(type='text/css', rel='stylesheet', href='../pokedex/dex.css')
+#container
+  #led_light
+  #led
+    #lightOne.light
+    #lightTwo.light
+    #lightThree.light
+  #screen
+    h2 Pokemon Battle Simulation
+    if name
+     h3#trainer= name
+    else
+      h3#trainer  what is your name PokeTrainer?
+  #input
+    form(action='/', method='post')
+      input#form(type='text', name='username')
+      input#button(type='submit', value='submit')
